@@ -101,7 +101,7 @@ class AddressBook(UserDict):
             with open(self.file_path, 'rb') as file:
                 self.data = pickle.load(file)
         except FileNotFoundError:
-            # Handle the case when the file doesn't exist yet
+            
             self.data = {}
 
     def search(self, query):
